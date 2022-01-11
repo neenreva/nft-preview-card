@@ -1,7 +1,149 @@
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
 }
 
-body {
-    background-color: hsl(217, 54%, 11%);
+html {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  margin: 100px auto;
+
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border-radius: 16px;
+  box-shadow: 10px 5px 100px hsl(217, 53%, 7%);
+}
+
+picture {
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 25px;
+  border-radius: 8px;
+  transition: 0.5 ease;
+  /* backface-visibility: hidden; */
+}
+
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  top: 275px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aqua;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* -ms-transform: translate(-50%, -50%); */
+}
+
+.overlay img {
+  height: 50px;
+  opacity: 1;
+  z-index: 1;
+}
+
+picture:hover .overlay {
+  opacity: 0.5;
+}
+
+main {
+  margin: 0 25px;
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 12px;
+}
+
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.balance-days {
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.balance-days img {
+  padding-right: 6px;
+}
+
+.balance,
+.days {
+  display: flex;
+  align-items: center;
+}
+
+.balance {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.days {
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+
+footer {
+  margin: 0 25px;
+  padding: 20px 0;
+  border-top: hsl(215, 51%, 70%) 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  max-height: 30px;
+  border: 2px white solid;
+  border-radius: 30px;
+}
+
+footer p {
+  color: white;
+  margin-left: 24px;
+}
+
+footer span {
+  color: hsl(215, 51%, 70%);
+  margin: 0px 4px;
+}
+
+footer span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  color: hsl(215, 51%, 70%);
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px 4px;
 }
