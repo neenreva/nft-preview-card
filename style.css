@@ -18,7 +18,7 @@ html {
   box-shadow: 10px 5px 100px hsl(217, 53%, 7%);
 }
 
-picture {
+.picture {
   width: 300px;
   border-radius: 16px;
   display: flex;
@@ -56,7 +56,7 @@ picture {
   z-index: 1;
 }
 
-picture:hover .overlay {
+.picture:hover .overlay {
   opacity: 0.5;
 }
 
